@@ -1,18 +1,15 @@
 from veiculos.models import Veiculo
 from veiculos.serializers import VeiculoSerializer
-from rest_framework import generics
+from rest_framework import permissions
+from rest_framework import viewsets
+from rest_framework import permissions
 
 
-class VeiculoList(generics.ListCreateAPIView):
-    """
-    Lista todos veículos ou cria um novo.
-    """
+
+class VeiculoViewSet(viewsets.ModelViewSet):
     queryset = Veiculo.objects.all()
     serializer_class = VeiculoSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
-class VeiculoDetail(generics.RetrieveUpdateDestroyAPIView):
-    """"
-    Recupera, atualiza ou deleta um veículo.
-    """
-    queryset = Veiculo.objects.all()
-    serializer_class = VeiculoSerializer
+    def perform_create(self, serializer):
+        serializer.save()
