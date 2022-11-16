@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:/Users/asus/.virtualenvs/vitrine-veiculos-back-EgHKF-vm/Scripts/python.exe"
+    "python.defaultInterpreterPath": "C:/Users/asus/.virtualenvs/vitrine-veiculos-back-EgHKF-vm/Scripts/python.exe",
+    "python.analysis.typeCheckingMode": "off"
 }
