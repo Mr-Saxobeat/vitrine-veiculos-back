@@ -1,10 +1,10 @@
-from django.urls import path
-from rest_framework.urlpatterns import format_suffix_patterns
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
 from veiculos import views
 
-urlpatterns = [
-    path('veiculos/', views.VeiculoList.as_view()),
-    path('veiculos/<int:pk>/', views.VeiculoDetail.as_view())
-]
+router = DefaultRouter()
+router.register(r'veiculos', views.VeiculoViewSet, basename='veiculo')
 
-urlpatterns = format_suffix_patterns(urlpatterns)
+urlpatterns = [
+    path('', include(router.urls))
+]
