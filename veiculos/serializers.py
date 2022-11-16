@@ -12,4 +12,4 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 class VeiculoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Veiculo
-        fields = ['id', 'Nome', 'Marca', 'Modelo', 'Valor']
+        fields = '__all__'
