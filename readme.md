@@ -24,9 +24,14 @@ Com a biblioteca instalada, instale a máquina virtual do repositório:
 pipenv install
 ````
 
-E por fim, execute-a:
+Ative a máquina virtual:
 ````
 pipenv shell
+````
+
+Execute as migrations do django:
+````
+python manage.py migrate
 ````
 
 Agora é só executar o servidor django:
