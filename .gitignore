@@ -2,3 +2,4 @@ app/__pycache__
 veiculos/__pycache__
 veiculos/migrations/__pycache__
 db.sqlite3
+authjwt/migrations/__pycache__
