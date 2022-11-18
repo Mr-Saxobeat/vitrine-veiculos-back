@@ -1,7 +1,5 @@
 from django.urls import include, path
 from rest_framework import routers
-from django.contrib import admin
-from rest_framework_simplejwt.views import (TokenObtainPairView, TokenRefreshView)
 
 router = routers.DefaultRouter()
 
@@ -9,5 +7,5 @@ router = routers.DefaultRouter()
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     path('api/', include('veiculos.urls')),
-    path('api/auth/', include('auth.urls'))
+    path('api/auth/', include('authjwt.urls'))
 ]

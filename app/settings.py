@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'veiculos',
     'rest_framework_simplejwt',
     'corsheaders',
-    'auth',
+    'authjwt',
 ]
 
 MIDDLEWARE = [
