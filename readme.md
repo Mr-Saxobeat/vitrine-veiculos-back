@@ -14,27 +14,27 @@ Para o desenvolvimento deste projeto foram utilizados:
 - sqlparse 0.4.3
 - tzdata 2022.6
 
-Para a máquina virtual, utilize a lib [pipenv](https://pypi.org/project/pipenv/):
-````
-pip install pipenv
-````
+1. Para a máquina virtual, utilize a lib [pipenv](https://pypi.org/project/pipenv/):
+    ````
+    pip install pipenv
+    ````
 
-Com a biblioteca instalada, instale a máquina virtual do repositório:
-````
-pipenv install
-````
+1. Com a biblioteca instalada, instale a máquina virtual do repositório:
+    ````
+    pipenv install
+    ````
 
-Ative a máquina virtual:
-````
-pipenv shell
-````
+1. Ative a máquina virtual:
+    ````
+    pipenv shell
+    ````
 
-Execute as migrations do django:
-````
-python manage.py migrate
-````
+1. Execute as migrations do django:
+    ````
+    python manage.py migrate
+    ````
 
-Agora é só executar o servidor django:
-````
-python manage.py runserver
-````
+1. Agora é só executar o servidor django:
+    ````
+    python manage.py runserver
+    ````
