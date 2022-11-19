@@ -14,6 +14,8 @@ Para o desenvolvimento deste projeto foram utilizados:
 - sqlparse 0.4.3
 - tzdata 2022.6
 
+O banco de dados utilizado é o db.sqlite3 nativo do próprio django.
+
 1. Para a máquina virtual, utilize a lib [pipenv](https://pypi.org/project/pipenv/):
     ````
     pip install pipenv
@@ -32,6 +34,16 @@ Para o desenvolvimento deste projeto foram utilizados:
 1. Execute as migrations do django:
     ````
     python manage.py migrate
+    ````
+
+1. Para popular o banco de dados, execute o comando:
+    ````
+    python manage.py popular
+    ````
+
+1. Se quiser limpar o banco de dados de veiculos, execute:
+    ````
+    python manage.py limpar
     ````
 
 1. Agora é só executar o servidor django:
