@@ -12,7 +12,7 @@ Para o desenvolvimento deste projeto foram utilizados:
     pip install pipenv
     ````
 
-1. Com a biblioteca instalada, instale a máquina virtual do repositório:
+1. Com a biblioteca instalada, execute o seguinte comando na pasta do repositório para instalar a máquina virtual:
     ````
     pipenv install
     ````
